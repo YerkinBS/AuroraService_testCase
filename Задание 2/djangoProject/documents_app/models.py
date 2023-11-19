@@ -6,30 +6,6 @@ from django.conf import settings
 import os
 
 
-# class MainUserManager(BaseUserManager, ):
-#     def create_user(self, email, password=None):
-#         if not email:
-#             raise ValueError('Users must have an email')
-#         user = self.model(email=email)
-#         user.set_password(password)
-#         user.save(using=self._db)
-#         return user
-
-#     def create_superuser(self, email, password):
-#         user = self.create_user(email, password=password)
-#         user.is_admin = True
-#         user.is_superuser = True
-#         user.save(using=self._db)
-#         return user
-
-
-
-# class CustomUser(AbstractBaseUser):
-#     email = models.CharField(max_length=40, unique=True)
-#     USERNAME_FIELD = "email"
-#     objects = MainUserManager()
-
-
 class MainUserManager(BaseUserManager):
     def create_user(self, email, password=None, **extra_fields):
         if not email:
