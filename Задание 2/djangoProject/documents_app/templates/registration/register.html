@@ -27,8 +27,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<div class="main-agileinfo">
 			<div class="agileits-top">
 				<form method="post">
-          {% csrf_token %}
-					<input class="text" type="text" name="username" placeholder="Username" required="">
+					{% csrf_token %}
 					<input class="text email" type="email" name="email" placeholder="Email" required="">
 					<input class="text" type="password" name="password1" placeholder="Password" required="">
 					<input class="text w3lpass" type="password" name="password2" placeholder="Confirm Password" required="">
@@ -39,7 +38,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</label>
 						<div class="clear"> </div>
 					</div>
-          {{ form.errors }}
+					{{ form.errors }}
 					<input type="submit" value="SIGNUP">
 				</form>
 				<p>Already have an account? <a href="{% url 'login' %}"> Login Now!</a></p>

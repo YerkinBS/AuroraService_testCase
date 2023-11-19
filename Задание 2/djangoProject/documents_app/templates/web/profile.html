@@ -11,27 +11,26 @@
     <title>Profile</title>
 </head>
 <body>
-    <div class="container mt-5 d-flex justify-content-center flex-column">
-        <div class="card p-3">
+    <div class="container mt-5 d-flex justify-content-center flex-column align-items-center">
+        <div class="card p-3 w-50">
             <div class="d-flex align-items-center">
                 <div class="image">
                     <img src="https://upload.wikimedia.org/wikipedia/commons/9/99/Sample_User_Icon.png" class="rounded" width="155" >
                 </div>
 
                 <div class="ml-3 w-100">
-                    <h4 class="mb-0 mt-0">{{ user.username }}</h4>
-                    <span>{{ user.email }}</span>
+                    <h4 class="mb-0 mt-0">{{ user }}</h4>
 
                     <button class="btn btn-primary mt-2" onclick="location.href='{% url 'upload_document' %}'">Upload Document</button>
 
                     <div class="button mt-2 d-flex flex-row align-items-center">
-                        <button class="btn btn-sm btn-outline-primary" style="white-space: nowrap;" onclick="location.href='{% url 'password_change' %}'">Change password</button>
-                        <button class="btn btn-sm btn-primary w-100 ml-2" onclick="location.href='{% url 'login' %}'">Logout</button>
+                        <button class="btn btn-sm btn-outline-primary w-100" style="white-space: nowrap;" onclick="location.href='{% url 'password_change' %}'">Change password</button>
+                        <button class="btn btn-sm btn-primary w-100 ml-2 w-100" onclick="location.href='{% url 'login' %}'">Logout</button>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="card p-3 mt-4">
+        <div class="card p-3 mt-4 w-50">
             <h4>Uploaded Files:</h4>
             {% for f in files %}
                 <div class="card p-2 mt-3 w-100 d-flex flex-row justify-content-between" id="file-{{f.id}}">
@@ -43,8 +42,8 @@
                 <a href="{{f.file.url}}"> Download </a>
                 </div>
                 <div class="d-flex flex-column pt-5">
-                <a class="btn btn-warning mt-2" href="{% url 'update_document' f.id %}">Update</a>
-                <button class="btn btn-danger mt-2" onclick="delete_file({{f.id}})">Delete</button>
+                <a class="btn btn-warning mt-2 px-5" href="{% url 'update_document' f.id %}">Update</a>
+                <button class="btn btn-danger mt-2 px-5" onclick="delete_file({{f.id}})">Delete</button>
                 </div>
                 </div>
             {% endfor %}
