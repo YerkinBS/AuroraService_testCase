@@ -49,3 +49,15 @@
 2023-11-19 16:19:15,491 - INFO - Файл 'C:\Users\user\Desktop\тз\Задание 1\pdfs\sampleExcel (2).pdf' не существует. Создание нового файла
 2023-11-19 16:19:15,492 - INFO - Создание файла C:\Users\user\Desktop\тз\Задание 1\pdfs\sampleExcel (2).pdf
 2023-11-19 16:19:15,496 - INFO - Файл C:\Users\user\Desktop\тз\Задание 1\pdfs\sampleExcel (2).pdf успешно создан
+2023-11-19 20:25:44,117 - INFO - 
+==================================================
+Запуск выполнения нового скрипта
+==================================================
+2023-11-19 20:25:44,488 - INFO - Выбор файла
+2023-11-19 20:25:50,932 - INFO - Выбран файл C:/Users/user/Desktop/тз/Задание 1/sample_files/sampleDocument.docx
+2023-11-19 20:25:50,932 - INFO - Началась конвертация файла Word в PDF
+2023-11-19 20:25:50,932 - INFO - Создание файла C:/Users/user/Desktop/тз/Задание 1/sample_files/sampleDocument.docx
+2023-11-19 20:25:50,932 - INFO - Проверка существования файла C:\Users\user\Desktop\тз\Задание 1/pdfs\sampleDocument
+2023-11-19 20:25:50,932 - INFO - Файл 'C:\Users\user\Desktop\тз\Задание 1/pdfs\sampleDocument (1).pdf' уже существует
+2023-11-19 20:25:50,932 - INFO - Файл 'C:\Users\user\Desktop\тз\Задание 1/pdfs\sampleDocument (2).pdf' не существует. Создание нового файла
+2023-11-19 20:25:52,881 - INFO - Файл C:\Users\user\Desktop\тз\Задание 1/pdfs\sampleDocument (2).pdf успешно создан
